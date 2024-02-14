@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    grid-area: menu;
+    background: #40A2E3;
+    color: white;
+    border: 1px solid black;
+}
+nav h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+main{
+    grid-area: seccion-principal;
+    gap: 30px;
+    height: auto;
+    background: #BBE2EC;
+}
+main h2{
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    }
+.galeria1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;   
+}
+.galeria2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;   
+}
+.galeria3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;   
+}
+.galeria4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;   
+}
+.galeria5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;   
+}
+.galeria6{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;   
+}
+.fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    justify-self: center;
+    border-radius: 5px;
+    height: 250px;
+    filter: grayscale(100%);
+    transition: all 1s ease-in;
+}
+.fotos:hover{
+    filter: grayscale(0);
+}
+.fotos img {
+    width: 70%;
+    transition: all 1s ease-in;
+}
+.fotos img:hover{
+    width: 80%;
+}
+footer{
+    grid-area: pie-de-pagina;
+    background: #0D9276;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor:pointer;
+    transition: all 1s ease;
+}
+footer a:hover{
+    opacity: 0.6;
+    font-size: 20px;
+}
+footer a .fa-facebook:hover{
+    color: blue;
+}
+footer a .fa-instagram:hover{
+    color: rgb(224, 55, 92);
+}
+
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+    "menu"
+    "seccion-principal"
+    "pie-de-pagina";
+}
+@media (min-width:576px) {
+    .layout{
+        grid-template-rows: auto auto 10%;
+        grid-template-areas: 
+        "menu"
+        "seccion-principal"
+        "seccion-principal"
+        "pie-de-pagina"
+        ;
+        
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        gap: 20px;
+        align-items: center;
+    }
+    .menu a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor:pointer;
+        font-size: 15px;
+        text-align: center;
+        transition: all 1s ease;
+    }
+    .menu a:hover{
+        opacity: 0.6;
+        font-size: 20px;
+    }
+    header{
+        display: none;
+    }
+    .galeria1{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .galeria2{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .galeria3{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .galeria4{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .galeria5{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .galeria6{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+@media (min-width:992px) {
+    .layout{
+        grid-template-areas: 
+        "menu seccion-principal"
+        "menu seccion-principal"
+        "pie-de-pagina pie-de-pagina";
+        grid-template-columns: 10% auto;
+        grid-template-rows: 40% auto auto;
+        
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-content: center;
+        justify-content:start;
+    }
+    nav h3{
+        text-align: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: start;
+        gap: 30px;
+    }
+    .menu a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor:pointer;
+        font-size: 15px;
+        text-align: center;
+        transition: all 1s ease;
+    }
+    .menu a:hover{
+        opacity: 0.6;
+        font-size: 20px;
+        
+    }
+    header{
+        display: none;
+    }
+    .galeria1{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 35px;
+    }
+    .galeria2{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 35px;
+    }
+    .galeria3{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 35px;
+    }
+    .galeria4{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 35px;
+    }
+    .galeria5{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 35px;
+    }
+    .galeria6{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 35px;
+        padding-bottom: 15px;
+    }
+}

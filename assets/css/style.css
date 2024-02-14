@@ -78,7 +78,7 @@ main h2{
     background-color: transparent;
     justify-self: center;
     border-radius: 5px;
-    height: 250px;
+    height: fit-content;
     filter: grayscale(100%);
     transition: all 1s ease-in;
 }

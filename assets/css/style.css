@@ -8,8 +8,8 @@ nav{
     justify-content: space-around;
     padding: 10px;
     grid-area: menu;
-    background: #40A2E3;
-    color: white;
+    background: #1e40a4;
+    color: #f4af38;
     border: 1px solid black;
 }
 nav h3{
@@ -20,6 +20,9 @@ nav h3{
     justify-content: center;
     align-items: center;
 }
+nav img{
+    width: 30%;
+}
 .menu{
     display: none;
 }
@@ -27,46 +30,53 @@ main{
     grid-area: seccion-principal;
     gap: 30px;
     height: auto;
-    background: #BBE2EC;
+    background: rgb(221, 216, 216);
 }
 main h2{
     font-weight: bold;
-    color: red;
+    color: #f4af38;
     text-align: center;
-    }
+    background: #1e40a4;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 35px;
+    border-radius: 5px;
+    border: 1px solid #f4af38;
+    }   
 .galeria1{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: fit-content;   
 }
 .galeria2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: fit-content;   
 }
 .galeria3{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: fit-content;   
 }
 .galeria4{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: fit-content;   
 }
 .galeria5{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: fit-content;   
 }
 .galeria6{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: fit-content;   
 }
@@ -94,7 +104,7 @@ main h2{
 }
 footer{
     grid-area: pie-de-pagina;
-    background: #0D9276;
+    background: black;
     color: white;
     display: flex;
     flex-direction: column;
@@ -147,7 +157,7 @@ footer a .fa-instagram:hover{
         align-items: center;
     }
     .menu a{
-        color: rgb(255, 255, 255);
+        color: #f4af38;
         text-decoration: none;
         cursor:pointer;
         font-size: 15px;
@@ -161,28 +171,31 @@ footer a .fa-instagram:hover{
     header{
         display: none;
     }
+    nav img{
+        width: 20%;
+    }
     .galeria1{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
     }
     .galeria2{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
     }
     .galeria3{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
     }
     .galeria4{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
     }
     .galeria5{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
     }
     .galeria6{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
     }
 }
@@ -203,8 +216,8 @@ footer a .fa-instagram:hover{
         align-content: center;
         justify-content:start;
     }
-    nav h3{
-        text-align: center;
+    nav img{
+        width: 100%;
     }
     .menu{
         display: flex;
@@ -212,9 +225,10 @@ footer a .fa-instagram:hover{
         align-content: center;
         text-align: start;
         gap: 30px;
+        padding-top: 25px;
     }
     .menu a{
-        color: rgb(255, 255, 255);
+        color: #f4af38;
         text-decoration: none;
         cursor:pointer;
         font-size: 15px;

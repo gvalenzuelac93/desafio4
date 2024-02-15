@@ -100,7 +100,7 @@ main h2{
     transition: all 1s ease-in;
 }
 .fotos img:hover{
-    width: 80%;
+    transform: scale(1.3);
 }
 footer{
     grid-area: pie-de-pagina;
@@ -116,17 +116,23 @@ footer a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     cursor:pointer;
+    font-size: 25px;
+}
+.fa-facebook{
     transition: all 1s ease;
+    padding-right: 10px;
 }
-footer a:hover{
-    opacity: 0.6;
-    font-size: 20px;
-}
-footer a .fa-facebook:hover{
+.fa-facebook:hover{
     color: blue;
+    transform: scale(2);
 }
-footer a .fa-instagram:hover{
+.fa-instagram{
+    transition: all 1s ease;
+    padding-left: 10px;
+}
+.fa-instagram:hover{
     color: rgb(224, 55, 92);
+    transform: scale(2);
 }
 
 .layout {
@@ -166,7 +172,7 @@ footer a .fa-instagram:hover{
     }
     .menu a:hover{
         opacity: 0.6;
-        font-size: 20px;
+        transform: scale(1.5);
     }
     header{
         display: none;
@@ -237,7 +243,7 @@ footer a .fa-instagram:hover{
     }
     .menu a:hover{
         opacity: 0.6;
-        font-size: 20px;
+        transform: scale(1.5);
         
     }
     header{

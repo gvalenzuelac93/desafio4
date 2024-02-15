@@ -10,7 +10,7 @@ nav{
     grid-area: menu;
     background: #1e40a4;
     color: #f4af38;
-    border: 1px solid black;
+    border: 1px solid #f4af38;
 }
 nav h3{
     font-size: 20px;
@@ -42,8 +42,15 @@ main h2{
     padding-right: 15px;
     margin-left: 35px;
     border-radius: 5px;
-    border: 1px solid #f4af38;
-    }   
+    border: 1px solid #f4af38; 
+}
+section{
+    grid-area: introduccion;
+    text-align: center;
+    background-color: #a4221e;
+    color: white;
+    border: 2px solid #f4af38;
+}     
 .galeria1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -104,7 +111,7 @@ main h2{
 }
 footer{
     grid-area: pie-de-pagina;
-    background: black;
+    background: rgb(0, 0, 0);
     color: white;
     display: flex;
     flex-direction: column;
@@ -113,12 +120,13 @@ footer{
     font-size: 16px;
 }
 footer a{
-    color: rgb(255, 255, 255);
+    color: rgb(236, 157, 157);
     text-decoration: none;
     cursor:pointer;
-    font-size: 25px;
+    font-size: 16px;
 }
 .fa-facebook{
+    color: white;
     transition: all 1s ease;
     padding-right: 10px;
 }
@@ -127,6 +135,7 @@ footer a{
     transform: scale(2);
 }
 .fa-instagram{
+    color: white;
     transition: all 1s ease;
     padding-left: 10px;
 }
@@ -138,17 +147,19 @@ footer a{
 .layout {
     display: grid;
     height: 100vh;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
     grid-template-areas: 
     "menu"
+    "introduccion"
     "seccion-principal"
     "pie-de-pagina";
 }
 @media (min-width:576px) {
     .layout{
-        grid-template-rows: auto auto 10%;
+        grid-template-rows: auto auto auto 10%;
         grid-template-areas: 
         "menu"
+        "introduccion"
         "seccion-principal"
         "seccion-principal"
         "pie-de-pagina"
@@ -207,12 +218,13 @@ footer a{
 }
 @media (min-width:992px) {
     .layout{
-        grid-template-areas: 
+        grid-template-areas:
+        "menu introduccion" 
         "menu seccion-principal"
         "menu seccion-principal"
         "pie-de-pagina pie-de-pagina";
         grid-template-columns: 10% auto;
-        grid-template-rows: 40% auto auto;
+        grid-template-rows: auto 40% auto auto;
         
     }
     nav{
